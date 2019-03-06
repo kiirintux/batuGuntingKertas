@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Game</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style type="text/css">
+    
+       .kontener{
+           position: absolute;
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%,-50%);
+       }
+
+       .kontener .text{
+           text-align: center;
+           margin-bottom: 30px;
+           font-family: 'Courier New', Courier, monospace;
+       }
+
+       .kontener pre{
+           text-align: center;
+       }
+
+
+    </style>
+</head>
+<body>
+
+<div class="kontener">
+    <h1 class="text">Welkam</h1>
+    <pre>User : <span id="hasilUser">NULL</span> | Komputer : <span id="hasilNPC">NULL</span></pre>
+
+    <button class="btn btn-primary btn-lg" id="pilihan" onclick="suit('gunting')">Gunting</button>
+    <button class="btn btn-primary btn-lg" id="pilihan" onclick="suit('batu')">Batu</button>
+    <button class="btn btn-primary btn-lg" id="pilihan" onclick="suit('kertas')">Kertas</button>
+
+    <div class="container">
+        <br>
+        <table>
+            <tr>
+                <td>Komputer</td>
+                <td> : </td>
+                <td id="npcSkor">0</td>
+            </tr>
+            <tr>
+                    <td>User</td>
+                    <td> : </td>
+                    <td id="usrSkor">0</td>
+                </tr>
+        </table>
+    </div>
+
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
