@@ -1,5 +1,6 @@
-# batuGuntingKertas
-cuman game iseng doang 
+# Game batu gunting kerta
+
+Implementasi random number generator untuk game batu gunting kertas dengan java script
 
 live demo
-https://kiirintux.github.io/batuGuntingKertas/
+https://littlecrimson.github.io/batuGuntingKertas/
